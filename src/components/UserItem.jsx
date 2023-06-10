@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { AiFillEdit } from 'react-icons/ai';
 // import { Stack, Skeleton } from '@mui/material'
 
 export const UserItem = (props) => {
@@ -13,6 +15,9 @@ export const UserItem = (props) => {
           <div className="user-info">
             <p className="fullname">{user.fname} {user.lname}</p>
             <p className="email">{user.email}</p>
+          </div>
+          <div>
+          <Link to={`/show-user/${user._id}`}><AiFillEdit/></Link>
           </div>
         </li>
       ))}

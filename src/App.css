@@ -126,6 +126,7 @@ h1, h2, h3, h4 {
     margin: unset;
     height: 100vh;
     position: relative;
+    padding: 20px;
   }
   .aside {
     width: 100%;
