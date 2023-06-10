@@ -7,7 +7,7 @@ const ShowUserDetails = (props) => {
     const { id } = useParams()
     const navigate = useNavigate()
     const [user, setUser] = useState([])
-    const page = "details"
+    // const page = "details"
 
     useEffect(() => {
         axios
